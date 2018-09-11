@@ -1,0 +1,317 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* =Menu
+	-------------------------------------------------------------- */
+
+#navbar{
+	background-color:#444444;
+}
+
+#access ul {
+	font-size: 16px;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+#access li {
+	position: relative;
+	border-bottom:solid 1px #656565;
+	
+}
+
+#access li:last-child {
+	border-bottom:none;
+}
+
+#access a{
+	display: block;
+	color:#ffffff;
+	padding:10px 0px;
+	text-decoration: none;
+}
+
+#access li a:hover{
+	color:#444444;
+}
+
+
+@media all and (min-width: 768px) {
+	#navbar{
+		background-color:transparent;
+	}
+
+	#access {
+		clear: both;
+		display: block;
+		float: left;
+		margin: 0 auto;
+		padding:0px 15px 0px 0px;
+		position:  absolute;
+		width:60.66%;
+		left:16.66%;
+	}
+
+	#access ul {
+		font-size: 13px;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		float:right;	
+	}
+	
+	
+
+	#access li {
+		float: left;
+		position: relative;
+		border:none;
+	}
+	
+	#access a {
+		color: #666666;
+		display: block;
+		line-height: 2.75em;
+		padding: 0.5em 1em;
+		text-decoration: none;
+		font-size:12px;
+		font-weight:500;
+		text-transform: uppercase;
+		letter-spacing:0px;
+		border:none;
+	}
+
+	#access ul ul {
+		display: none;
+		float: left;
+		margin: 0;
+		position: absolute;
+		top: 2.0em;
+		left: 0;
+		width: 188px;
+		z-index: 99999;
+		padding:33px 0 0 0;
+	}
+	#access ul ul ul {
+		left: 100%;
+		top: 0;
+		padding-top:0px;
+	}
+
+	#access ul ul a,
+	#access ul ul ul a{
+		padding:0 0.4em;
+		font-weight:500;
+		font-size:9px;
+		font-size:0.9rem;
+	}
+
+
+
+	
+	#access ul ul li:first-child,
+	#access ul ul ul:first-child{
+		border-top:none;
+	}
+
+	#access ul ul a {
+		background: url(img/translucent.png) transparent repeat center; /* Show a solid color for older browsers */;
+		color: #666666;
+		font-size: 9px;
+		font-size:0.9rem;
+		font-weight: 500;
+		height: auto;
+		line-height: 3.2em;
+		padding: 0px 10px;
+		width: 195px;
+		text-align:center;
+	}
+
+	#access ul ul :hover > a,
+	#access a:focus {
+		background: #CACACA;
+		color:#ffffff;
+	}
+
+	#access li:hover > a,
+	#access a:focus {
+		background: #ffffff; /* Show a solid color for older browsers */
+		color: #666666;
+	}
+
+	#access li > a:after{
+		height: 4px;
+		 content: '';
+	  	display: block;
+	}
+
+	#access li:hover > a:after{
+	  content: '';
+	  display: block;
+	  background: #CACACA;
+	  height: 4px;
+	  width: 100%;
+	  margin: 0 auto;
+	}
+
+	#access .current_page_item > a:after{
+	  content: '';
+	  display: block;
+	  background: #666666;
+	  height: 4px;
+	  width: 100%;
+	  margin: 0 auto;
+	}
+	
+
+	#access ul ul .current_page_item > a:after,
+	#access ul ul ul .current_page_item > a:after{
+		 background:transparent;
+	}
+
+	#access ul li:hover > ul {
+		display: block;
+	}
+	#access .current-menu-item > a,
+	#access .current-menu-ancestor > a,
+	#access .current_page_item > a,
+	#access .current_page_ancestor > a {
+		font-weight: 500;
+		background: url(img/translucent.png) transparent repeat center; /* Show a solid color for older browsers */
+		color: #666666;
+	}
+
+	#access ul ul .current_page_item > a,	
+
+	#access ul ul ul .current-menu-item > a,
+	#access ul ul ul .current-menu-ancestor > a,
+	#access ul ul ul .current_page_item > a{
+		font-weight: 500;
+		background: none #888888; /* Show a solid color for older browsers */
+		color: #eeeeee;
+	}
+
+}
+
+@media all and (min-width: 992px) {}
+
+
+@media all and (min-width: 1200px) {}
+
+/* Blog */
+
+.pagination{
+	width:100%;
+	
+}
+
+.post_item{
+	margin-bottom:50px;
+	padding-bottom:50px;
+	border-bottom: solid 1px #cccccc;
+}
+
+.pagination_links{
+	display:inline-block;
+}
+
+@media all and (min-width: 768px) {}
+
+@media all and (min-width: 992px) {}
+
+@media all and (min-width: 1200px) {}
+
+
+/* Widget */
+
+.widget_block{
+	margin-bottom:50px;
+	padding-bottom:50px;
+}
+
+.widget_block ul{
+	margin-left:0px;
+	padding-left:0px;
+	list-style: none;
+}
+
+.widget_block ul li{
+	padding:5px 0px;
+	border-bottom:solid 1px #cccccc;
+}
+
+.widget_block ul li:last-child{
+	border-bottom:none;
+
+}
+
+
+@media all and (min-width: 768px) {}
+
+@media all and (min-width: 992px) {}
+
+@media all and (min-width: 1200px) {}
+
+
+/* General */
+
+#wpadminbar{
+	position: fixed;
+}
+
+html {
+    margin-top: 97px !important;
+}
+
+body.admin-bar .navbar-fixed-top{
+	top:45px;
+}
+
+.section{
+	padding-bottom:50px;
+	margin-bottom:50px;
+}
+
+.offset_top_50{
+	margin-top:50px;
+}
+
+.offset_bottom_50{
+	margin-bottom:50px;
+}
+
+@media all and (min-width: 768px) {
+
+	html {
+	    margin-top: 83px !important;
+	}
+
+	body.admin-bar .navbar-fixed-top{
+		top:32px;
+	}
+
+}
+
+@media all and (min-width: 992px) {
+
+}
+
+@media all and (min-width: 1200px) {
+
+}
+
+
+@media all and (min-width: 1400px) {
+
+}
+
+@media all and (min-width: 1600px) {
+
+}
+
+
